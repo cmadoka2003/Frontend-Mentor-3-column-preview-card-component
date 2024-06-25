@@ -1,0 +1,163 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;  
+}
+
+.content {
+    height: 80%;
+    width: 375px;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+}
+
+.sedans {
+    background: var(--Bright-orange);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.suvs {
+    background: var(--Dark-cyan);
+}
+
+.luxury {
+    background: var(--Very-dark-cyan);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+img {
+    width: 80px;
+}
+
+.voiture {
+    padding: 60px;
+}
+
+h2{
+    padding: 60px;
+    padding-top: 0;
+    padding-bottom: 30px;
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.description {
+    padding: 60px;
+    padding-top: 0;
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 18px;
+}
+
+p {
+    width: 300px;
+    padding-right: 25px;
+    line-height: 30px;
+}
+
+
+button {
+    border-radius: 25px;
+    border: none;
+    background: white;
+    padding: 20px 45px;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+}  
+
+#a {
+    color: var(--Bright-orange);
+}
+
+#b {
+    color: var(--Dark-cyan);
+}
+
+#c {
+    color: var(--Very-dark-cyan);
+}
+
+@media screen and (min-width: 1080px) {
+    body {
+        height: 100vh;
+    }
+
+    .content {
+        display: flex;
+        width: 1030px;
+        height: 65%; 
+    }
+
+    .sedans {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+
+    .luxury {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+
+    img {
+        width: 70px;
+    }
+
+    .voiture {
+        padding: 75px;
+        padding-bottom: 25px;
+    }
+
+    h2 {
+        padding: 75px;
+        padding-top: 0;
+        padding-bottom: 35px;
+        font-size: 45px;
+    }
+
+    .description {
+        padding: 75px;
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
+
+    p{
+        width: 200px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+
+    #descrip_suvs {
+        padding-right: 5px;
+    }
+
+    #descrip_luxury {
+        padding-right: 5px;
+    }
+
+    button {
+        margin: 75px;
+        margin-top: 0;
+        padding: 15px 35px;
+        font-size: 15px;
+    }
+
+}
